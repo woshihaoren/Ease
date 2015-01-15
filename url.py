@@ -28,19 +28,32 @@ define("debug", default=True, help="Debug mode.", type=bool)
 
 
 class BaseHandler(tornado.web.RequestHandler):
+    """基础类，设置cookie使用。
+    """
     def get_current_user(self):
         return self.get_secure_cookie("user")
 
 
+def add(x, y):
+    return x + y
+
+
 class MainHandler(BaseHandler):
+    """网站主页
+    要求必须通过用户验证才可以登录显示，否则重定向至/login
+    """
     @tornado.web.authenticated
     def get(self):
-        self.render("static/index.html", upload='123')
+        self.render("static/index.html", upload='123', add=add)
 
 
 class LoginHandler(BaseHandler):
+    """登录类
+        1.登录
+        2.接受登录请求做出处理。
+    """
     def get(self):
-        return self.render("static/index.html", upload='null')
+        return self.render("static/index.html", upload='null', wrx='111')
 
     def post(self):
         if self.get_argument("name") == 'ease':
@@ -52,9 +65,10 @@ class LoginHandler(BaseHandler):
 
 class LogoutHandler(BaseHandler):
     def get(self):
-        #self.clear_cookie("user")
+        # self.clear_cookie("user")
         self.clear_all_cookies()
         self.write('<meta http-equiv="refresh" content="2;URL=/login"><body>you are logout<body>')
+
 
 def main():
     tornado.options.parse_command_line()
