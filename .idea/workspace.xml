@@ -51,8 +51,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14785992" vertical-offset="0" max-vertical-offset="514">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.1848249" vertical-offset="0" max-vertical-offset="514">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -491,7 +491,13 @@
       <option name="project" value="LOCAL" />
       <updated>1421290501234</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test05">
+      <created>1421291001348</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1421291001348</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -539,7 +545,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="test02" />
     <MESSAGE value="test03" />
-    <option name="LAST_COMMIT_MESSAGE" value="test03" />
+    <MESSAGE value="test05" />
+    <option name="LAST_COMMIT_MESSAGE" value="test05" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -791,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14785992" vertical-offset="0" max-vertical-offset="514">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.1848249" vertical-offset="0" max-vertical-offset="514">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
           <folding />
         </state>
       </provider>
